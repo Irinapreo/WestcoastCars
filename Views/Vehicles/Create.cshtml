@@ -1,0 +1,28 @@
+@model WestCoast_Cars.ViewModels.VehicleViewModel
+
+<section>
+    <h1>Lägg till ny bil</h1>
+    <form asp-action="Create">
+        <div>
+            <label for="RegNo">Reg number</label> 
+            <input asp-for="RegNo" type="text">
+        </div>
+        <div>
+            <label for="Make">Make</label> 
+            <input asp-for="Make" type="text">
+            
+        </div>
+        <div>
+            <label for="Model">Model</label> 
+            <input asp-for="Model" type="text">
+            
+        </div>
+        <div>
+            <label for="ModelYear">Model Year</label> 
+            <input asp-for="ModelYear" type="text">
+        </div>
+        <div>
+            <button>Save</button>
+        </div>
+    </form>
+</section>
